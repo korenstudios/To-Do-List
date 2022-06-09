@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+header {
+  text-align: center;
+  font-size: 1em;
+}
+
+header + .container {
+  margin-top: 50px;
+}
+
+.add-task-container {
+  /* border: 3px solid blue; */
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.add-task-container:hover {
+  background-color: azure;
+  cursor: pointer;
+}
+
+.plus-icon,
+.trash-icon {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+.plus-icon + span {
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 5px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.remove-tasks-container {
+  margin-block-start: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.tasks-container {
+  border-bottom: 2px solid blue;
+}
+
+.task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.is-complete {
+  margin-top: 15px;
+  font-size: 1.5em;
+  width: 20px;
+  height: 20px;
+}
+
+.task:hover {
+  border: 1px solid green;
+}
+
+.task-content[contenteditable] {
+  display: inline;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.task-content[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+.red {
+  background-color: red;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+@media (max-width: 280.98px) {
+  .add-task-container {
+    font-size: 1.2rem;
+  }
+}
